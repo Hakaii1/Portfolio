@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/815e56b167.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>2nd Year College</p>
+            <h1>Hi, I'm <span>Kyle Eurie</span><br>From CS-202</h1>
+        </div>
+    </div>
+</div>
+<!-----------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is <span style="color: #ff004f;">Kyle Eurie Alvaro Gulapa.</span> My birthday is September 06, 2003 and I'm currently 20 years old. I'm from Porac Pampanga and studying at <span style="color: #ff004f;">Holy Angel University</span> taking <span style="color: #ff004f;">Bachelor of Science in Computer Science.</span></p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-----------skills---------->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span><br>Basic knowledge</li>
+                        <li><span>Python</span><br>Basic knowledge</li>
+                        <li><span>HTML</span><br>Basic knowledge</li>
+                        <li><span>CSS</span><br>Basic knowledge</li>
+                        <li><span>JAVASCRIPT</span><br>Basic knowledge</li>
+                    </ul>
+                </div>
+                <!-----------Experience---------->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>N/A</span></li>
+
+                    </ul>
+                </div>
+                <!-----------Education---------->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Elementary</span><br>Mitla Elementary School</li>
+                        <li><span>High School</span><br>Porac Model Community High School</li>
+                        <li><span>Senior High School</span><br>Porac Model Community High School</li>
+                        <li><span>College</span><br>Holy Angel University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-------------Hobbies------------->
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobbies-list">
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Online Games</h2>
+                <p>Playing online games is one of my stress reliever. I've been playing online games in any platforms such as Valorant, Mobile Legends, Clash of clans, League of legends, and many more.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-basketball"></i>
+                <h2>Basketball</h2>
+                <p>Playing basketball with my friends also became one of my stress reliever.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Coding</h2>
+                <p>I took the course Bachelor of Science in Computer Science because I love coding and I want to know more about it.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------Achievements----------->
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">My Achievements</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Achievement1.png">
+                <div class="layer">
+                    <h3>MLBB TOURNAMENT (Barangay)</h3>
+                    <p>On March 25, 2023, we won the finals in this brgy tournament and won 5000 pesos cash.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Achievement2.png">
+                <div class="layer">
+                    <h3>Mobile Legends</h3>
+                    <p>On June 29,2023, I achieved my highest stars in Mobile Legends</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Achievement3.png">
+                <div class="layer">
+                    <h3>MLBB TOURNAMENT (SOC DAYS)</h3>
+                    <p>On October 24, 2022, we fought all of the teams in our department(School of Computing) and won the championship.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> kylegulapa06@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 09123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/EurieGulapa/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/kyle_eurie/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/EurieeGulapa"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-circle-up"></i></a>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kyle Eurie.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu()
+    {
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+</body>
+</html>
